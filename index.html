@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <marquee
+      behavior=""
+      direction=""
+      style="
+        color: yellow;
+        font-weight: bolder;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: larger;
+      "
+      >Now an expert is once a begineer</marquee
+    >
+  <div id="main_div">
+    <div id="div_1"></div>
+    <div id="div_2"></div>
+    <div id="div_3"></div>
+</div>
+    <br />
+
+    <button onclick="colorchange1();colorchange2();colorchange3();bodychange();" id="btn">Generate</button>
+  </body>
+
+  <script>
+    let maindiv = document.getElementById("main_div");
+      maindiv.style.height="100vh"
+      maindiv.style.width="100vw"
+      maindiv.style.border="2px solid"
+
+    let box1 = document.getElementById("div_1");
+    box1.style.height = "250px";
+    box1.style.width = "300px";
+    box1.style.border = "2px solid ";
+    box1.style.margin = "150px";
+    let btn_change = document.getElementById("btn");
+    btn_change.style.marginLeft = "750px";
+    btn_change.style.position = "absolute";
+    btn_change.style.marginTop = "-100px";
+    let box2 = document.getElementById("div_2");
+    box2.style.height = "250px";
+    box2.style.width = "300px";
+    box2.style.border = "2px solid ";
+    box2.style.margin = "150px";
+    let box3 = document.getElementById("div_3");
+    box3.style.height = "250px";
+    box3.style.width = "300px";
+    box3.style.border = "2px solid ";
+    box3.style.margin = "150px";
+    maindiv.appendChild(div_1)
+    maindiv.appendChild(div_2)
+    maindiv.appendChild(div_3)
+    maindiv.style.display="flex"
+    
+
+
+    function colorchange1() {
+      let randomcolor = Math.floor(Math.random() * 16777215).toString(16);
+      let rgbvalue = "#" + randomcolor;
+      box1.style.backgroundColor = rgbvalue;
+    }
+    function colorchange2() {
+      let randomcolor = Math.floor(Math.random() * 16777215).toString(16);
+      let rgbvalue = "#" + randomcolor;
+      box2.style.backgroundColor = rgbvalue;
+    }
+    function colorchange3() {
+      let randomcolor = Math.floor(Math.random() * 16777215).toString(16);
+      let rgbvalue = "#" + randomcolor;
+      box3.style.backgroundColor = rgbvalue;
+    }
+
+
+
+    function bodychange() {
+      let randomcolor = Math.floor(Math.random() * 16777215).toString(16);
+      let rgbvalue = "#" + randomcolor;
+      document.body.style.backgroundColor = rgbvalue;
+    }
+  </script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1">
+        <input type="search" id="ip1"><br><br>
+        <input type="submit" value="clickhere">
+
+    </form> 
+    <p id="p1"></p>
+</body>
+<script>
+    let p1=document.getElementById("p1")
+    let form=document.getElementById('form1');
+    form.addEventListener("submit",(e)=>
+    {
+        e.preventDefault();
+        let val=document.getElementById("ip1")
+        p1.innerHTML=`Hello ${val.value}`
+    })
+</script>
+</html>
+
+
+
