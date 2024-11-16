@@ -29,33 +29,38 @@
 
   <script>
     let maindiv = document.getElementById("main_div");
-      maindiv.style.height="100vh"
-      maindiv.style.width="100vw"
-      maindiv.style.border="2px solid"
+    //   maindiv.style.height="550px"
+    //   maindiv.style.width="850px"
+    //   maindiv.style.border="2px solid"
+      maindiv.style.padding="20px"
 
     let box1 = document.getElementById("div_1");
-    box1.style.height = "250px";
-    box1.style.width = "300px";
+    box1.style.height = "150px";
+    box1.style.width = "200px";
+    box1.style.padding="50px"
     box1.style.border = "2px solid ";
-    box1.style.margin = "150px";
+    
     let btn_change = document.getElementById("btn");
-    btn_change.style.marginLeft = "750px";
+    btn_change.style.marginLeft = "700px";
     btn_change.style.position = "absolute";
-    btn_change.style.marginTop = "-100px";
+    
     let box2 = document.getElementById("div_2");
     box2.style.height = "250px";
     box2.style.width = "300px";
     box2.style.border = "2px solid ";
-    box2.style.margin = "150px";
+    
     let box3 = document.getElementById("div_3");
     box3.style.height = "250px";
     box3.style.width = "300px";
     box3.style.border = "2px solid ";
-    box3.style.margin = "150px";
+    
     maindiv.appendChild(div_1)
     maindiv.appendChild(div_2)
     maindiv.appendChild(div_3)
     maindiv.style.display="flex"
+    maindiv.style.alignItems="center"
+    maindiv.style.justifyContent="center"
+    maindiv.style.gap="25px"
     
 
 
